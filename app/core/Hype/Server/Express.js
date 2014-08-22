@@ -33,6 +33,7 @@ module.exports = function(Hype) {
 				app.get('/', function (req, res) {
 					res.render('index.html');
 				});
+				app.use('/static/', path.resolve('./app/themes/' + Config.express.theme + '/static'));
 
 				// Setup to use the admin
 				app.get(Config.admin, function (req, res) {
