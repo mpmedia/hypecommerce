@@ -1,5 +1,5 @@
 node_modules
-static/components/*
+libs/*
 .sass-cache
 src
 dest

@@ -22,7 +22,13 @@ module.exports = function(grunt) {
             afterConcat: ['static/js/**/*.js']
         },
         concat: {
-            src: ['js/bootstrapper.js', 'js/admin/**/*.js', 'js/startup.js'],
+            src: [
+                'js/bootstrapper.js',
+                'js/Data/**/*.js',
+                'js/Widgets/**/*.js'
+                'js/Screens/**/*.js'
+                'js/startup.js'
+            ],
             dest: 'dist/admin.js',
         },
         jasmine: {
