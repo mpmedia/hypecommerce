@@ -27,36 +27,76 @@ h1,h2,h3,h4,h5 {
     font-weight:700;
     text-rendering:optimizeLegibility;
 }
-.text-vertical-center h3 ,
+
+.text-callout-large h1,
+.text-callout-large h3,
+.text-vertical-center h3,
 .lead {
     font-size:18px;
     font-weight:inherit;
     font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+.text-callout-large,
 .text-vertical-center {
     display: table-cell;
     text-align: center;
     vertical-align: middle;
 }
 
+.text-callout-large {
+    text-align:left;
+}
+
+.text-callout-large h1,
 .text-vertical-center h1 {
     margin: 0;
     padding: 0;
+    letter-spacing:-2px;
     color:#000;
-    font-size: 4.5em;
-    font-weight: 700;
+    font-size: 4em;
+    font-weight: 500;
 }
-
+.text-callout-large h2,
 .text-vertical-center h2 {
     margin: 0;
     padding: 0;
     letter-spacing:-2px;
     font-size: 3.5em;
-    font-weight: 700;
+    line-height:1.2em;
+    font-weight: 300;
 }
-.text-vertical-center h3 {
+.text-callout-large h2 {
+    letter-spacing: -1px;
 }
+.text-callout-large h2 {
+    margin-top:18px;
+    font-size: 1.6em;
+    line-height:1.6em;
+}
+.text-callout-large .lead {
+    margin-top:18px;
+}
+
+.enroll-form {
+    font-size:16px;
+}
+
+.enroll-form .checkbox {
+    display: inline;
+    text-align: center;
+}
+.enroll-form .form-group input[type="text"],
+.enroll-form .form-group button[type="submit"],
+.enroll-form .form-group input[type="email"] {
+    padding:15px 15px;
+    height:inherit;
+}
+.enroll-form .form-group .btn-primary {
+    border:0;
+    width:100%;
+}
+
 
 /* Custom Button Styles */
 

@@ -66,32 +66,16 @@
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
-<!--           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-          </button> -->
+          </button>
           <a class="navbar-brand" href="#">Hype Commerce</a>
         </div>
         <div class="navbar-collapse collapse">
-<!--           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>
-          </ul> -->
+
           <ul class="nav navbar-nav navbar-right">
             <li><a href="http://hypecommerce.tumblr.com/" target="_blank">The Hype</a></li>
             <li class="active"><a href="./">Request a Demo</a></li>
@@ -100,20 +84,44 @@
       </div>
     </div>
 
-
     <!-- Header -->
     <header id="top" class="header">
-        <div class="text-vertical-center">
-        <div class="container">
-            <h2>Run your business on the most robust eCommerce platform in the world</h2>
-            <h3>Hype Commerce was built to be powerful, expandable, and easy-to-use</h3>
-            <br>
-            <form action="//hypejs.us8.list-manage.com/subscribe/post?u=90ca2cb69e3d76c63de03586e&amp;id=081fea9d44" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Enter your email" required>
-                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                <div style="position: absolute; left: -5000px;"><input type="text" name="b_90ca2cb69e3d76c63de03586e_081fea9d44" tabindex="-1" value=""></div>
-                <input type="submit" value="Get Updated" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary btn-lg">
-            </form>
+        <div class="text-callout-large">
+            <div class="container">
+                <div class="col-lg-7">
+                    <h1>Build a bigger business, use smarter software.</h1>
+                    <h2>Hype Commerce is an eCommerce platform built to be powerful, expandable, and easy-to-use. Best of all, it's free and <a href="https://github.com/hypecommerce/hypecommerce" target="_blank">open-source</a>.</h2>
+                    <!-- <p class="lead">Hype Commerce was built to be powerful, expandable, and easy-to-use. Best of all, we're free and <a href="https://github.com/hypecommerce/hypecommerce" target="_blank">open-source</a>. Learn more about what this means for <a href="#">businesses</a> and <a href="#">developers</a>.</p> -->
+                </div>
+                <div class="col-lg-4 col-lg-offset-1">
+
+                    <form action="//hypejs.us8.list-manage.com/subscribe/post?u=90ca2cb69e3d76c63de03586e&amp;id=081fea9d44" id="enroll-form" role="form" method="post" class="enroll-form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" name="EMAIL" placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">I'm Interested!</button>
+                        </div>
+                        <div class="form-group">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="radio" name="type" checked="CHECKED" value="0"> I'm a <strong>Merchant</strong>
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="radio" name="type" value="1"> I'm a <strong>Developer</strong>
+                                </label>
+                            </div>
+                        </div>
+                        <input type="hidden" name="FNAME" value=""/>
+                        <input type="hidden" name="LNAME" value=""/>
+                        <div style="position: absolute; left: -5000px;"><input type="text" name="b_90ca2cb69e3d76c63de03586e_081fea9d44" tabindex="-1" id="protect" value=""></div>
+                    </form>
+                </div>
             </div>
         </div>
     </header>
@@ -124,7 +132,7 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-lg-12">
-                    <h2>Perfect for any-sized business</h2>
+                    <h1>Ready for Business</h1>
                     <hr class="small">
                     <div class="row">
                         <div class="col-lg-offset-4 col-lg-4">
@@ -210,6 +218,7 @@
 
     <section id="portfolio" class="portfolio">
         <div class="container">
+            <h1>Build a Better Business</h1>
             <hr class="small">
             <div class="row text-center">
                 <div class="col-sm-6 col-lg-4">
@@ -582,33 +591,37 @@
 
     <!-- Custom Theme JavaScript -->
     <script>
-    // Closes the sidebar menu
-    $("#menu-close").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
+    // Toggles the form for mailchimp
+    $('input\[name="type"\]').on('change', function(e) {
+        var developerUrl = '//hypejs.us8.list-manage.com/subscribe/post?u=90ca2cb69e3d76c63de03586e&id=644d0741fe',
+            merchantUrl = '//hypejs.us8.list-manage.com/subscribe/post?u=90ca2cb69e3d76c63de03586e&id=081fea9d44',
+            developerProtect = 'b_90ca2cb69e3d76c63de03586e_644d0741fe',
+            merchantProtect = 'b_90ca2cb69e3d76c63de03586e_081fea9d44';
+
+        if ($(this).val() == 1) {
+            $('#enroll-form').attr('action', developerUrl);
+            $('#protect').attr('name', developerProtect);
+        } else {
+            $('#enroll-form').attr('action', merchantUrl);
+            $('#protect').attr('name', merchantProtect);
+
+        }
     });
 
-    // Opens the sidebar menu
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-
-    // Scrolls to the selected menu item on the page
-    $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                }
+    $('#name').on('keyup', function(e) {
+        var name = $(this).val().split(' '),
+            i = 1,
+            lastname = '';
+        // Set the firstname to whatever we have
+        $('input\[name="FNAME"\]').val(name[0]);
+        // If we have more, try to fill in a last name
+        if (name.length > 1) {
+            for (i; i < name.length; i++) {
+                lastname += name[i] + " ";
             }
-        });
+            $('input\[name="LNAME"\]').val(lastname);
+
+        }
     });
 
     // Log a lightning bolt to the console
@@ -628,6 +641,7 @@
     ],
         lightningBoltStr = lightningBolt.join("\n");
 
+    // Aww yeaa lightning bolt
     console.log(lightningBoltStr);
 
     // Google Analytics
