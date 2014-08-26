@@ -245,11 +245,11 @@ hr.small {
 /* Services */
 
 .services {
-    padding: 50px 0;
+    padding: 20px 0;
 }
 
 .service-item {
-    margin-bottom: 30px;
+    padding:80px 0;
 }
 
 .portfolio .btn-dark,
@@ -408,7 +408,7 @@ a {
     color:#5e325a;
 }
 .text-primary {
-    color:#FFF;
+    color:#fff;
 }
 .service-item .fa-circle {
     color:#5e325a;
