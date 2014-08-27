@@ -136,70 +136,6 @@ hr.small {
     max-width: 100px;
 }
 
-/* Side Menu */
-
-#sidebar-wrapper {
-    z-index: 1000;
-    position: fixed;
-    right: 0;
-    width: 250px;
-    height: 100%;
-    margin-right: -250px;
-    overflow-y: auto;
-    background: #222;
-    -webkit-transition: all 0.4s ease 0s;
-    -moz-transition: all 0.4s ease 0s;
-    -ms-transition: all 0.4s ease 0s;
-    -o-transition: all 0.4s ease 0s;
-    transition: all 0.4s ease 0s;
-}
-
-.sidebar-nav {
-    position: absolute;
-    top: 0;
-    width: 250px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.sidebar-nav li {
-    text-indent: 20px;
-    line-height: 40px;
-}
-
-.sidebar-nav li a {
-    display: block;
-    text-decoration: none;
-    color: #999;
-}
-
-.sidebar-nav li a:hover {
-    text-decoration: none;
-    color: #fff;
-    background: rgba(255,255,255,0.2);
-}
-
-.sidebar-nav li a:active,
-.sidebar-nav li a:focus {
-    text-decoration: none;
-}
-
-.sidebar-nav > .sidebar-brand {
-    height: 55px;
-    font-size: 18px;
-    line-height: 55px;
-}
-
-.sidebar-nav > .sidebar-brand a {
-    color: #999;
-}
-
-.sidebar-nav > .sidebar-brand a:hover {
-    color: #fff;
-    background: none;
-}
-
 #menu-toggle {
     z-index: 1;
     position: fixed;
@@ -358,10 +294,6 @@ footer {
     padding: 80px 0 20px 0;
 }
 
-/* Custom overrides */
-.navbar-fixed-top {
-    height:70px;
-}
 .btn-primary {
     background-color:#5e325a;
 }
@@ -379,10 +311,39 @@ footer {
     padding:15px 20px;
     margin-top:-9px;
 }
+.navbar-sub {
+    border:0;
+    min-height:25px;
+    background-color:#111;
+    margin-top:70px;
+}
+.navbar-sub .container {
+    padding:0;
+}
+.navbar-sub a {
+    color:#fff;
+}
+.navbar-sub .navbar-nav a {
+
+}
+.navbar-sub .navbar-nav li>a, .navbar-sub .navbar-nav li>a:hover, .navbar-sub .navbar-nav li>a:focus {
+    color:#FFF;
+    font-size:12px;
+    padding:10px 15px;
+    margin-right:10px;
+}
+.navbar-sub .navbar-nav li>a:hover {
+    color:#FFF;
+    color:rgb(94,50,90);
+}
 .navbar-default {
     /* background-color: rgba(140,91,136,1.0);  */
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgb(94,50,90);
     border:0;
+}
+
+#top .text-callout-large {
+    padding-top:100px;
 }
 
 .navbar-default .navbar-brand {
