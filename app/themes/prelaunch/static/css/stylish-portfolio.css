@@ -243,19 +243,19 @@ hr.small {
 }
 
 /* Services */
-
+#enterprise,
 .services {
-    padding: 20px 0;
+    padding: 80px 0 40px 0;
 }
 
 .service-item {
-    padding:80px 0;
+    padding:40px 0;
 }
 
 .portfolio .btn-dark,
 .service-item .btn-dark {
     margin-top:20px;
-    background-color:#5e325a;
+    background-color:#333;
 }
 .portfolio .btn-dark {
     margin-top:0;
@@ -264,11 +264,17 @@ hr.small {
 .service-item .btn-dark:hover {
     background-color:#8C5B88;
 }
+.service-item .col-lg-3 {
+    text-align: center;
+}
 
 /* Callout */
 .vs {
     margin:15px auto 10px auto;
     display:block;
+}
+.hype-lg-icon {
+    font-size:12em;
 }
 
 .callout-2,
@@ -371,11 +377,7 @@ footer {
     background-color: rgba(0,0,0,0.8);
     border:0;
 }
-#mce-EMAIL {
-    font-size:22px;
-    width:60%;
-    padding:10px;
-}
+
 .navbar-default .navbar-brand {
     color:#FFF;
     padding:25px 25px;
@@ -411,7 +413,7 @@ a {
     color:#fff;
 }
 .service-item .fa-circle {
-    color:#5e325a;
+    color:inherit;
 }
 a:hover {
     color:#8C5B88;
@@ -457,5 +459,5 @@ a:hover {
     text-indent: 10px;
     color:#FFF;
     padding:10px 0!important;
-    background-color: #5e325a;
+    background-color: #333;
 }
