@@ -1,0 +1,3 @@
+[submodule "app/themes/homepage"]
+	path = app/themes/homepage
+	url = https://tlackemann@bitbucket.org/hypecommerce/homepage.git
